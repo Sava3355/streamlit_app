@@ -156,6 +156,10 @@ with col1:
         value=f"{min_row[value_col]:.2f}",
         help=f"{int(min_row['年度'])}年"
     )
+    max_year = int(max_row['年度'])
+    min_year = int(min_row['年度'])
+    st.write(f'{max_year}年が高く、')
+    st.write(f'{min_year}年が低いことが確認できます。')
 
 with col2:
     st.markdown('散布図の概要（文系・理系）')
